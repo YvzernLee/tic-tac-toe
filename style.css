@@ -11,3 +11,113 @@ display: grid;
 place-items: center;
 font-family: Courier;
  }
+
+ .game{
+   width:100%;
+   max-width: 420px;
+   padding:28px;
+   border:10px solid black;
+   border-radius:20px;
+   background-color:pink;
+   box-shadow: 0 16px 48px pink;
+   text-align: center;
+ }
+
+ .eyebrow{
+margin:0 0 12px;
+color:navy;
+font-size:15;
+font-weight: bold;
+letter-spacing:1.5px;
+ }
+
+ h1{
+   margin:0 0 10px;
+   font-size: 36px;
+ }
+
+ .instruction{ 
+  margin:0; 
+  font-size:17px;
+  line-height:1.6;
+ }
+
+ #status{
+   margin:20px 0;
+   padding: 12px;
+   border-radius:12px;
+   background-color: white;
+   color:red;
+   font-size: 20px;
+   font-weight: bold;
+ }
+ 
+ .board{
+   display:grid;
+   grid-template-columns:repeat(3,1fr);
+   gap:10px;
+ }
+
+ .cell{
+   min-width:0;
+   aspect-ratio: 1;
+   cursor:pointer;
+   padding:0;
+   border:2px solid black;
+   border-radius:20px;
+   background-color: cyan;
+   color: blue;
+   font:bold 46px arial, sans-serif;
+ }
+
+.cell:not(:disabled):hover{
+   border-color:grey;
+   background-color:white;
+
+}
+
+.cell:disabled{
+   opiacity:1;
+   cursor:default;
+}
+
+.cell.x{
+   color:blue;
+}
+
+.cell.o{
+   color:black;
+}
+
+.cell.winner{
+   border-color:orange;
+   background-color: gold;
+}
+
+#restart{
+   width:100%;
+   margin-top:20px;
+   padding:14px;
+   cursor:pointer;
+   font: bold 15px arial, sans-serif;
+   border-radius:12px;
+   background-color: aqua;
+   color:darkred;
+}
+
+
+#restart:hover{
+   background-color:yellow;
+}
+
+button:focus-visible{
+   outline: 10px solid white;
+   outline-offset:2px;
+}
+
+.footnote{
+   margin:16px 0 0;
+   color: blue;
+   font-size:15px;
+   line-height:1.5;
+}
